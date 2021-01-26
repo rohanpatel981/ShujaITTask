@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/background_image_3">
+
+    <TextView
+        android:id="@+id/textViewAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:textColor="@color/white"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.8"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAdd"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:weightSum="2">
+        
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="64dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/imageViewAdd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/star_icon"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:gravity="center"
+            android:alpha="0.8"
+            android:text="@string/fragment_refuel_head_tex"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frameLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout_1"
+        android:layout_marginTop="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="20dp">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

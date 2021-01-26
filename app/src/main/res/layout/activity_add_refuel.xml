@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_image_5"
+    tools:context=".AddRefuel">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textViewD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/date"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:text="@string/time"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_1"
+        android:layout_marginLeft="30dp"
+        android:text="@string/odometer"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/editTextOdometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewO"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewFuelType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextOdometer"
+        android:layout_marginLeft="30dp"
+        android:text="@string/fuel_type"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_fuel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFuelType"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:entries="@array/spinner_fuel"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_fuel"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/EditTextPricePerKwh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/price_per_gal"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/EditTextTotalCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/EditTextGallons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/gallons"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewGasStation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_2"
+        android:layout_marginLeft="30dp"
+        android:text="@string/gas_station"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        />
+    <LinearLayout
+        android:id="@+id/linearLayout_56"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/textViewGasStation"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+    <EditText
+        android:id="@+id/editTextGasStation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:textColor="@color/white" />
+
+        <LinearLayout
+            android:onClick="goToMap"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@mipmap/mapicon"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonAddFuel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_56"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/roundedbuttonblue"
+        android:text="@string/Add_fuel"
+        android:textAllCaps="true" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "39888673329",
+    "project_id": "shujaassignmenttask",
+    "storage_bucket": "shujaassignmenttask.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39888673329:android:c39f11c070a004e8f05310",
+        "android_client_info": {
+          "package_name": "com.example.shujaassignmenttask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39888673329-oop16srp7tqbod468ufhr6n7n4gerkob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZTh3XXwwVnULPkLWJRvE8YW8HcwIQnTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39888673329-oop16srp7tqbod468ufhr6n7n4gerkob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

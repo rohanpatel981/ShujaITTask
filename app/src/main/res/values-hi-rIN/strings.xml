@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShujaAssignmentTask</string>
+    <string name="Add_fuel">ईंधन रिकॉर्ड जोड़ें</string>
+    <string name="fragment_refuel_head_tex">अपने खर्च की निगरानी शुरू करें!</string>
+    <string name="date">दिनांक</string>
+    <string name="time">समय</string>
+    <string name="odometer">ओडोमीटर</string>
+    <string name="fuel_type">ईंधन प्रकार</string>
+    <string name="gas_station">पेट्रोल पंप</string>
+    <string name="petrol">"पेट्रोल "</string>
+    <string name="diesel">डीज़ल</string>
+    <string name="electric">बिजली</string>
+    <string name="ethanol">इथेनॉल</string>
+    <string name="LPG">" रसोई गैस"</string>
+    <string name="gasoline">गैसलीन्</string>
+    <string name="gas_premium">गैस प्रीमियम</string>
+    <string name="gas_midgrade">गैस मिडग्रेड</string>
+    <string name="price_per_gal">कीमत / गैल</string>
+    <string name="gallons">गैलन</string>
+    <string name="history">इतिहास</string>
+    <string name="reports">रिपोर्टों</string>
+    <string name="refueling">"ईंधन भरने "</string>
+    <string name="reminders">अनुस्मारक</string>
+    <string name="more">अधिक</string>
+</resources>

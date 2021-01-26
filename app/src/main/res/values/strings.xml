@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">ShujaAssignmentTask</string>
+    <string name="google_map_key">AIzaSyAOQ4tF2j_9xEwRLRNv1Nvlj0geu296pa4</string>
+    <string name="regex_sms_Amount">(?i)(?:(?:RS|INR|MRP)\\.?\\s?)(\\d+(:?\\,\\d+)?(\\,\\d+)?(\\.\\d{1,2})?)</string>
+    <string name="regex_sms_Place">(?i)(?:\\sat\\s|in\\*)([A-Za-z0-9]*\\s?-?\\s?[A-Za-z0-9]*\\s?-?\\.?)</string>
+    <string name="regex_sms_MOP">(?i)(?:\\smade on|ur|made a\\s|in\\*)([A-Za-z]*\\s?-?\\s[A-Za-z]*\\s?-?\\s[A-Za-z]*\\s?-?)</string>
+
+    <string name="Add_fuel">ADD FUEL</string>
+    <string name="fragment_refuel_head_tex">Start monitoring your expense!</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="odometer">Odometer</string>
+    <string name="fuel_type">Fuel type</string>
+    <string name="gas_station">Gas station</string>
+    <string name="petrol">Petrol</string>
+    <string name="diesel">Diesel</string>
+    <string name="electric">Electric</string>
+    <string name="ethanol">Ethanol</string>
+    <string name="LPG">LPG</string>
+    <string name="gasoline">Gasoline</string>
+    <string name="gas_premium">Gas Premium</string>
+    <string name="gas_midgrade">Gas Midgrade</string>
+    <string name="price_per_gal">Price / Gal</string>
+    <string name="gallons">Gallons</string>
+    <string name="history">History</string>
+    <string name="reports">Reports</string>
+    <string name="refueling">Refueling</string>
+    <string name="reminders">Reminders</string>
+    <string name="more">More</string>
+
+
+    <string-array name="spinner_vehicles">
+        <item>Car</item>
+        <item>Motorcycle</item>
+        <item>Bus</item>
+        <item>Truck</item>
+    </string-array>
+
+    <string-array name="spinner_manufacturer">
+        <item>Honda</item>
+        <item>BMW</item>
+        <item>Maruti</item>
+        <item>Masserati</item>
+        <item>Audi</item>
+        <item>Nissan</item>
+        <item>Ford</item>
+        <item>Tesla</item>
+    </string-array>
+
+    <string-array name="spinner_fuel">
+        <item>@string/petrol</item>
+        <item>@string/diesel</item>
+        <item>@string/electric</item>
+        <item>@string/ethanol</item>
+        <item>@string/LPG</item>
+        <item>@string/gasoline</item>
+        <item>@string/gas_premium</item>
+        <item>@string/gas_midgrade</item>
+    </string-array>
+</resources>
